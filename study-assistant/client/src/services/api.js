@@ -1,6 +1,7 @@
-const BASE = import.meta.env.VITE_API_URL || "http://localhost:3001";
-const DEFAULT_TIMEOUT_MS = 30000;
+const API_URL = import.meta.env.VITE_API_URL || "";
+const BASE = `${API_URL.replace(/\/$/, "")}/api`;
 
+const DEFAULT_TIMEOUT_MS = 30000;
 // Combines an internal timeout with an optional caller-supplied AbortSignal
 // (used for stale-request cancellation — e.g. a newer generation request
 // superseding an older one, or a quiz question changing mid-evaluation).
