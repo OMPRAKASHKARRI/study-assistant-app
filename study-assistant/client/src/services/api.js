@@ -1,4 +1,4 @@
-const BASE = "/api";
+const BASE = import.meta.env.VITE_API_URL || "http://localhost:3001";
 const DEFAULT_TIMEOUT_MS = 30000;
 
 // Combines an internal timeout with an optional caller-supplied AbortSignal
