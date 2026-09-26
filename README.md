@@ -227,6 +227,18 @@ The project demonstrates a React interface connected to a separate backend, an L
 
 The implementation provides experience with integrating an LLM into a web application, parsing and validating structured model responses, managing asynchronous React state, building an answer-evaluation workflow, handling external-service failures, and separating frontend and backend responsibilities.
 
+## 🤖 AI Usage Note
+
+AI-assisted development tools were used during the development process for debugging,
+code review, implementation assistance, and documentation.
+
+The application itself uses Groq as the runtime LLM provider. AI-generated study
+content and quiz evaluations are treated as external, potentially imperfect data;
+the backend parses and validates model responses before they are used by the frontend.
+
+All final application behavior, architecture, integration, and implementation were
+reviewed and tested as part of the development process.
+
 ## Author
 
 **Om Prakash Karri**  
